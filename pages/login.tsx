@@ -81,7 +81,7 @@ export default function Login() {
               <Link color="dark.900" href="#">
                 <Text as="u">Terms and Conditions</Text>
               </Link>
-              <br display={{ base: 'none', md: 'block' }} />
+              <Box display={{ base: 'none', md: 'block' }} />
               and our{' '}
               <Link color="dark.500" href="#">
                 <Text as="u"> End User License Agreement</Text>
