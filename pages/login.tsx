@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import React, { useState, FC } from 'react';
 import Image from 'next/image';
 import {
   Flex,
-  Heading,
   Input,
   Text,
   Button,
@@ -10,13 +9,10 @@ import {
   Center,
   Container,
   Stack,
-  InputLeftElement,
-  chakra,
   Box,
   Grid,
   GridItem,
   Link,
-  Avatar,
   FormControl,
   FormHelperText,
   InputRightElement,
@@ -25,7 +21,17 @@ import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 import StagePlayerLogo from '../lib/assets/stage_player.svg';
 
-export default function Login() {
+interface LoginProps {
+  // onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  // onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  email: string;
+  password: string;
+  error: string;
+  isLoading: boolean;
+  isViewing: boolean;
+}
+
+const Login: FC<LoginProps> = () => {
   const [showPassword, setShowPassword] = useState(false);
   const handleShowClick = () => setShowPassword(!showPassword);
 
@@ -59,16 +65,18 @@ export default function Login() {
                       </InputRightElement>
                     </InputGroup>
                     <FormHelperText textAlign="left">
-                      <Link color="dark.500" href="#">
+                      <Link color="dark.500" href="/">
                         <Text as="u">Forgot password?</Text>
                       </Link>
                     </FormHelperText>
                   </FormControl>
                 </Stack>
                 <Flex justifyContent="flex-end" mx={4}>
-                  <Button borderRadius={0} type="submit" variant="solid" colorScheme="blue" rounded="md">
-                    Sign in
-                  </Button>
+                  <Link color="dark.900" href="/productions">
+                    <Button borderRadius={0} variant="solid" colorScheme="blue" rounded="md">
+                      Sign in
+                    </Button>
+                  </Link>
                 </Flex>
               </form>
             </Box>
@@ -78,12 +86,12 @@ export default function Login() {
           <Center ml={{ md: 36 }} mr={{ lg: 36, xl: 16 }}>
             <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
               By signing in, you agree to our{' '}
-              <Link color="dark.900" href="#">
+              <Link color="dark.900" href="/">
                 <Text as="u">Terms and Conditions</Text>
               </Link>
               <Box display={{ base: 'none', md: 'block' }} />
               and our{' '}
-              <Link color="dark.500" href="#">
+              <Link color="dark.500" href="/">
                 <Text as="u"> End User License Agreement</Text>
               </Link>
               .
@@ -93,4 +101,6 @@ export default function Login() {
       </Container>
     </Flex>
   );
-}
+};
+
+export default Login;

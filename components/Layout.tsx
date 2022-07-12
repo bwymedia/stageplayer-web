@@ -2,12 +2,12 @@ import Image from 'next/image';
 import type { ReactNode } from 'react';
 
 import { Container, Flex, Text } from '@chakra-ui/react';
-
-import NavBar from './NavBar';
+// @ts-ignore
+import NavBar from './NavBar.tsx';
 import Logo from '../lib/assets/black_logo.png';
 
 type Props = {
-  children?: ReactNode;
+  children: ReactNode;
 };
 
 export default function Layout({ children }: Props) {

@@ -1,8 +1,6 @@
 import NextLink from 'next/link';
-import type { ReactNode } from 'react';
-
+import React, { ReactNode } from 'react';
 import {
-  Box,
   Select,
   Menu,
   IconButton,
@@ -10,28 +8,29 @@ import {
   MenuList,
   MenuItem,
   ButtonGroup,
-  Center,
   Spacer,
   Button,
   Flex,
   Container,
   Text,
   Link,
-  Icon,
   useDisclosure,
+  Show,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { FiShoppingCart } from 'react-icons/fi';
+// @ts-ignore
+import ShoppingCart from './ShoppingCart.tsx';
 
-type Props = {
-  children?: ReactNode;
-};
+interface Props {
+  children: ReactNode;
+}
 
-export default function Navbar({ children }: Props) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const Navbar = ({ children }: Props): React.ReactNode => {
+  const { onOpen, onClose } = useDisclosure();
 
   return (
     <Container maxW="6xl">
+      {children}
       <Flex minWidth="max-content" alignItems="center" gap="2" py={4}>
         <Menu>
           <MenuButton as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="transparent" />
@@ -60,21 +59,25 @@ export default function Navbar({ children }: Props) {
           </MenuList>
         </Menu>
         <Spacer />
-        <Text textAlign="right">
-          Looking for script-accurate show content?
-          <br />
-          Check out{' '}
-          <NextLink href="/home" passHref>
-            <Link color="blue.500">Scenic Projections</Link>
-          </NextLink>
-        </Text>
+        <Show breakpoint="(min-width: 768px)">
+          <Text textAlign="right">
+            Looking for script-accurate show content?
+            <br />
+            Check out{' '}
+            <NextLink href="/" passHref>
+              <Link color="blue.500" href="/">
+                Scenic Projections
+              </Link>
+            </NextLink>
+          </Text>
+        </Show>
         <ButtonGroup gap="2" ml={6}>
           <Button colorScheme="blue">Log in</Button>
-          <Button variant="transparent">
-            <Icon h={6} w={6} as={FiShoppingCart} />
-          </Button>
+          <ShoppingCart />
         </ButtonGroup>
       </Flex>
     </Container>
   );
-}
+};
+
+export default Navbar;

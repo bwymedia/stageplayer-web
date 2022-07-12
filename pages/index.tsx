@@ -1,28 +1,12 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import Image from 'next/image';
-import {
-  Container,
-  Box,
-  Link,
-  Grid,
-  GridItem,
-  Stack,
-  HStack,
-  VStack,
-  AspectRatio,
-  Img,
-  InputGroup,
-  InputLeftElement,
-  Input,
-  Button,
-  Text,
-  Icon,
-} from '@chakra-ui/react';
+import { Container, Link, Grid, GridItem, HStack, VStack, InputGroup, InputLeftElement, Input, Button, Text, Icon } from '@chakra-ui/react';
 import { PhoneIcon } from '@chakra-ui/icons';
 import { TbFilter } from 'react-icons/tb';
-import Layout from '../components/Layout';
+// @ts-ignore
+import Layout from '../components/Layout.tsx';
 
 const dropData = [
   {
@@ -55,85 +39,85 @@ const dropData = [
   },
 ];
 
-const Home: NextPage = () => {
-  return (
-    <Layout>
-      <Head>
-        <title>StagePlayer Web</title>
-        <meta name="description" content="Your source for professional-quality digital backdrops" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
-      <main>
-        <VStack spacing={8}>
-          <Container maxW="6xl">
-            <Text textAlign="left" fontSize="2xl">
-              Your source for professional-quality digital backdrops
-            </Text>
-            <Text fontSize="md">
-              Prepare your mind to be blown.{' '}
-              <NextLink href="/login" passHref>
-                <Link color="blue.500">Click Here</Link>
-              </NextLink>{' '}
-              to peruse our subscription options.
-            </Text>
-          </Container>
-          <Container maxW="6xl">
-            <InputGroup>
-              <InputLeftElement pointerEvents="none">
-                <PhoneIcon color="gray.300" />
-              </InputLeftElement>
-              <Input type="tel" placeholder="Search our collection" />
-              <HStack>
-                <Icon as={TbFilter} h={8} w={8} />
-                <Button colorScheme="blue" size="sm">
-                  Search
-                </Button>
-              </HStack>
-            </InputGroup>
-          </Container>
-          <Container maxW="6xl">
-            <Text fontSize="xl" textAlign="left">
-              Featured Backdrops
-            </Text>
+const Home: NextPage = () => (
+  <Layout>
+    <Head>
+      <title>StagePlayer Web</title>
+      <meta name="description" content="Your source for professional-quality digital backdrops" />
+      <link rel="icon" href="/favicon.png" />
+    </Head>
+    <main>
+      <VStack spacing={8}>
+        <Container maxW="6xl">
+          <Text textAlign="left" fontSize="2xl">
+            Your source for professional-quality digital backdrops
+          </Text>
+          <Text fontSize="md">
+            Prepare your mind to be blown.{' '}
+            <NextLink href="/login" passHref>
+              <Link color="blue.500" href="/">
+                Click Here
+              </Link>
+            </NextLink>{' '}
+            to peruse our subscription options.
+          </Text>
+        </Container>
+        <Container maxW="6xl">
+          <InputGroup>
+            <InputLeftElement pointerEvents="none">
+              <PhoneIcon color="gray.300" />
+            </InputLeftElement>
+            <Input type="tel" placeholder="Search our collection" />
+            <HStack>
+              <Icon as={TbFilter} h={8} w={8} />
+              <Button colorScheme="blue" size="sm">
+                Search
+              </Button>
+            </HStack>
+          </InputGroup>
+        </Container>
+        <Container maxW="6xl">
+          <Text fontSize="xl" textAlign="left">
+            Featured Backdrops
+          </Text>
 
-            <Text fontSize="md">Popular</Text>
-            <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
-              {dropData.map((drop) => (
-                <GridItem key={drop.id}>
-                  <video style={{ width: '100%' }} src={drop.previewVideo} controls />
-                </GridItem>
-              ))}
-            </Grid>
-            <Text fontSize="md">Recently Added</Text>
-            <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
-              {dropData.map((drop) => (
-                <GridItem key={drop.id}>
-                  <video style={{ width: '100%' }} src={drop.previewVideo} controls />
-                </GridItem>
-              ))}
-            </Grid>
-            <Text fontSize="md">Photo Real</Text>
-            <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
-              {dropData.map((drop) => (
-                <GridItem key={drop.id}>
-                  <video style={{ width: '100%' }} src={drop.previewVideo} controls />
-                </GridItem>
-              ))}
-            </Grid>
-            <Text fontSize="md">Premium Backdrops</Text>
-            <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
-              {dropData.map((drop) => (
-                <GridItem key={drop.id}>
-                  <video style={{ width: '100%' }} src={drop.previewVideo} controls />
-                </GridItem>
-              ))}
-            </Grid>
-          </Container>
-        </VStack>
-      </main>
-      <footer></footer>
-    </Layout>
-  );
-};
+          <Text fontSize="md">Popular</Text>
+          <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
+            {dropData.map((drop) => (
+              <GridItem key={drop.id}>
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls />
+              </GridItem>
+            ))}
+          </Grid>
+          <Text fontSize="md">Recently Added</Text>
+          <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
+            {dropData.map((drop) => (
+              <GridItem key={drop.id}>
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls />
+              </GridItem>
+            ))}
+          </Grid>
+          <Text fontSize="md">Photo Real</Text>
+          <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
+            {dropData.map((drop) => (
+              <GridItem key={drop.id}>
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls />
+              </GridItem>
+            ))}
+          </Grid>
+          <Text fontSize="md">Premium Backdrops</Text>
+          <Grid templateColumns="repeat(4, 1fr)" gap={6} style={{ width: '130%' }}>
+            {dropData.map((drop) => (
+              <GridItem key={drop.id}>
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls />
+              </GridItem>
+            ))}
+          </Grid>
+        </Container>
+      </VStack>
+    </main>
+    <footer />
+  </Layout>
+);
 
 export default Home;
