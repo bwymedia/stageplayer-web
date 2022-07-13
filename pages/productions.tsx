@@ -63,7 +63,7 @@ const Productions: FC<ProductionsProps> = () => (
               <Text fontSize="md">Collection A</Text>
             </Flex>
 
-            <Box height="195px" maxWidth="350px" position="relative">
+            <Box height="195px" width="100%" position="relative">
               <Image
                 layout="fill"
                 src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
