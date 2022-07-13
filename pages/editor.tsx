@@ -261,10 +261,12 @@ const Editor = () => (
               </Text>
             </Text>
             <ButtonGroup spacing={2}>
-              <Button variant="outline" colorScheme="blue">
+              <Button variant="outline" colorScheme="blue" size={{ base: 'sm', md: 'md' }}>
                 Skip Transition
               </Button>
-              <Button colorScheme="blue">Transition to Next</Button>
+              <Button colorScheme="blue" size={{ base: 'sm', md: 'md' }}>
+                Transition to Next
+              </Button>
             </ButtonGroup>
           </Flex>
           <Text fontStyle="italic" fontSize="sm" mt={4} textAlign="right">
@@ -279,11 +281,40 @@ const Editor = () => (
         Production 2 <Text fontWeight="normal">&nbsp;- Cues</Text>
       </Text>
       <Grid templateColumns={{ base: 'repeat(9, 1fr)' }} mt={0} bg="gray.200">
-        <GridItem colSpan={1} p={2} border="1px" borderColor="gray.300" display="flex" flexDirection="column" justifyContent="center" textAlign="center" />
-        <GridItem colSpan={1} p={1} ml={-0.75} border="1px" borderColor="gray.300" display="flex" flexDirection="column" justifyContent="center" textAlign="center">
-          Cue #
+        <GridItem
+          colSpan={1}
+          display={{ base: 'none', md: 'flex' }}
+          p={2}
+          border="1px"
+          borderColor="gray.300"
+          flexDirection="column"
+          justifyContent="center"
+          textAlign="center"
+        />
+        <GridItem
+          colSpan={{ base: 2, md: 1 }}
+          p={1}
+          ml={{ base: 0, md: -0.75 }}
+          border="1px"
+          borderColor="gray.300"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          textAlign="center"
+        >
+          Cue&nbsp;#
         </GridItem>
-        <GridItem colSpan={2} p={1} ml={-0.75} border="1px" borderColor="gray.300" display="flex" flexDirection="column" justifyContent="center" textAlign="center">
+        <GridItem
+          colSpan={{ base: 3, md: 2 }}
+          p={1}
+          ml={-0.75}
+          border="1px"
+          borderColor="gray.300"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          textAlign="center"
+        >
           Description
         </GridItem>
         <GridItem colSpan={1} p={1} ml={-0.75} border="1px" borderColor="gray.300" display="flex" flexDirection="column" justifyContent="center" textAlign="center">
@@ -293,12 +324,11 @@ const Editor = () => (
           Cue Line
         </GridItem>
         <GridItem
-          colSpan={1}
+          display={{ base: 'none', md: 'flex' }}
           p={1}
           ml={-0.75}
           border="1px"
           borderColor="gray.300"
-          display="flex"
           flexDirection="column"
           justifyContent="center"
           textAlign="center"
@@ -317,18 +347,18 @@ const Editor = () => (
 
           <AccordionPanel p={0} pb={4} border="1px" borderColor="gray.300" mt={-0.5}>
             <Grid templateColumns="repeat(9, 1fr)">
-              <GridItem colSpan={1} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
+              <GridItem colSpan={1} p={2} display={{ base: 'none', md: 'flex' }} flexDirection="column" justifyContent="center" textAlign="center">
                 <Flex justifyContent="center" alignItems="center">
                   <Icon as={HamburgerIcon} mr={2} />
                   <Box border="1px" borderColor="gray.500" height={6} width={10} />
                 </Flex>
               </GridItem>
 
-              <GridItem colSpan={1} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
+              <GridItem colSpan={{ base: 2, md: 1 }} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
                 <Text fontSize="xs"> 10-A</Text>
               </GridItem>
 
-              <GridItem colSpan={2} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
+              <GridItem colSpan={{ base: 3, md: 2 }} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
                 <Text fontSize="xs">Curtain Warmer</Text>
               </GridItem>
 
@@ -340,7 +370,7 @@ const Editor = () => (
                 <Text fontSize="xs">House is open</Text>
               </GridItem>
 
-              <GridItem colSpan={1} p={2} display="flex" flexDirection="column" justifyContent="center" textAlign="center">
+              <GridItem colSpan={1} p={2} display={{ base: 'none', md: 'flex' }} flexDirection="column" justifyContent="center" textAlign="center">
                 <Flex justifyContent="center" alignItems="center">
                   <Icon as={GrCursor} mr={2} w={4} h={4} />
                   <Icon as={TbArrowsCross} w={4} h={4} />
