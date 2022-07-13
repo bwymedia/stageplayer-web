@@ -48,7 +48,7 @@ const Collections: FC<CollectionsProps> = () => (
           My Collections
         </Text>
 
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
             <Flex alignItems="center" mb={2}>
               <Icon as={AiOutlineStar} w={6} h={6} />
@@ -179,20 +179,63 @@ const Collections: FC<CollectionsProps> = () => (
               </Text>
             </Flex>
           </GridItem>
+          <GridItem>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection 3</Text>
+            </Flex>
+
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
+            />
+            <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
+              <GridItem>
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+            </Grid>
+            <Flex justifyContent="flex-end">
+              <Text fontSize="xs" mt={1} color="blue.500">
+                Edit
+              </Text>
+            </Flex>
+          </GridItem>
         </Grid>
 
         <Text fontSize="lg">Add New...</Text>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
-            <Flex alignItems="center" justifyContent="center" height="200px" border="1px" borderColor="gray.400">
-              <Box height="auto" width="100%" justifyContent="center" mx={0} marginY="auto" textAlign="center">
+            <Flex alignItems="center" justifyContent="center" height="166px" border="1px" borderColor="gray.400">
+              <Box height="auto" width="92px" justifyContent="center" mx={0} marginY="auto" textAlign="center">
                 <Icon as={AiOutlinePlusCircle} w={14} h={14} />
               </Box>
             </Flex>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
-              <GridItem border="1px" borderColor="gray.400" height="64px" />
-              <GridItem border="1px" borderColor="gray.400" height="64px" />
-              <GridItem border="1px" borderColor="gray.400" height="64px" />
+              <GridItem border="1px" borderColor="gray.400" height="46px" />
+              <GridItem border="1px" borderColor="gray.400" height="46px" />
+              <GridItem border="1px" borderColor="gray.400" height="46px" />
             </Grid>
           </GridItem>
         </Grid>
@@ -200,7 +243,7 @@ const Collections: FC<CollectionsProps> = () => (
         <Text fontSize="2xl" color="blue.500" fontWeight="bold">
           Popular Collections
         </Text>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
             <Flex alignItems="center" mb={2}>
               <Text fontSize="md">Collection A</Text>
@@ -290,6 +333,49 @@ const Collections: FC<CollectionsProps> = () => (
           <GridItem>
             <Flex alignItems="center" mb={2}>
               <Text fontSize="md">Collection C</Text>
+            </Flex>
+
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
+            />
+            <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
+              <GridItem>
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+            </Grid>
+            <Flex justifyContent="flex-end">
+              <Text fontSize="xs" mt={1} color="blue.500">
+                Make a Copy
+              </Text>
+            </Flex>
+          </GridItem>
+          <GridItem>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection D</Text>
             </Flex>
 
             <Image

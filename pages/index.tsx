@@ -51,7 +51,7 @@ const Home: NextPage = () => (
     <Head>
       <title>StagePlayer Web</title>
       <meta name="description" content="Your source for professional-quality digital backdrops" />
-      <link rel="icon" href="/favicon.png" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
       <VStack spacing={8}>

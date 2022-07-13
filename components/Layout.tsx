@@ -16,10 +16,13 @@ const Layout = ({ children }: Props): React.ReactNode => (
     <NavBar />
     <main>{children}</main>
     <footer>
-      <Container maxW="6xl" my={4}>
+      <Container maxW="6xl" my={{ base: 6, md: 4 }}>
         <Flex direction="row" justifyContent="space-between" alignItems="center">
-          <Image src={Logo} alt="Broadway Media" height={48} width={80} />
-          <Text fontSize=".75rem">2022 &copy; Broadway Media Distribution, Inc. All rights reserved.</Text>
+          <Image src={Logo} alt="Broadway Media" height={40} width={72} />
+          <Text fontSize={{ base: 'xs', md: 'sm' }} textAlign="right">
+            2022 &copy; Broadway Media Distribution, Inc.
+            <Text display={{ md: 'inline-flex' }}>&nbsp;All rights reserved.</Text>
+          </Text>
         </Flex>
       </Container>
     </footer>

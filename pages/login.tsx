@@ -66,9 +66,9 @@ const Login: FC<LoginProps> = () => {
                       </InputRightElement>
                     </InputGroup>
                     <FormHelperText textAlign="left">
-                      <Link color="dark.500" href="/">
-                        <Text as="u">Forgot password?</Text>
-                      </Link>
+                      {/* <Link color="dark.500" href="/"> */}
+                      <Text as="u">Forgot password?</Text>
+                      {/* </Link> */}
                     </FormHelperText>
                   </FormControl>
                 </Stack>
@@ -87,15 +87,15 @@ const Login: FC<LoginProps> = () => {
           <Center ml={{ md: 36 }} mr={{ lg: 36, xl: 16 }}>
             <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
               By signing in, you agree to our{' '}
-              <NextLink href="/https://www.broadwaymedia.com/about/terms" passHref>
-                <Link color="dark.900" href="/https://www.broadwaymedia.com/about/terms">
+              <NextLink href="https://www.broadwaymedia.com/about/terms" passHref>
+                <Link color="dark.900" href="/https://www.broadwaymedia.com/about/terms" target="_blank">
                   <Text as="u">Terms and Conditions</Text>
                 </Link>
               </NextLink>
               <Box display={{ base: 'none', md: 'block' }} />
               and our{' '}
               <NextLink href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla" passHref>
-                <Link color="dark.500" href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla">
+                <Link color="dark.500" href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla" target="_blank">
                   <Text as="u"> End User License Agreement</Text>
                 </Link>
               </NextLink>
