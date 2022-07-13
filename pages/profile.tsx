@@ -104,13 +104,13 @@ const Profile = () => {
               <Button variant="ghost" size="xs" onClick={onOpen}>
                 Manage
               </Button>
-              <Modal isOpen={isOpen} onClose={onClose} size={{ base: 'xl', md: '5xl' }}>
+              <Modal isOpen={isOpen} onClose={onClose} size={{ base: 'xl', md: '2xl', lg: '5xl' }}>
                 <ModalOverlay />
                 <ModalContent>
                   <ModalHeader color="blue.500">StagePlayer Subscription Tiers</ModalHeader>
                   <ModalCloseButton />
                   <ModalBody>
-                    <Grid id="subscription-modal" templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' }} gap={4}>
+                    <Grid id="subscription-modal" templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} gap={4}>
                       {data.map((item) => (
                         <GridItem key={item.tier} colSpan={1} border="2px" borderColor="blue.500" borderRadius="md" style={{ borderStyle: 'dashed' }}>
                           <VStack spacing={4} textAlign="center">
