@@ -74,8 +74,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -118,8 +118,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -163,8 +163,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -208,8 +208,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -259,8 +259,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -303,8 +303,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -348,8 +348,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -393,8 +393,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -444,8 +444,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -488,8 +488,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -533,8 +533,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -578,8 +578,8 @@ const Productions: FC<ProductionsProps> = () => (
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
-                  height={195}
-                  width={325}
+                  height={65}
+                  width={115}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
