@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import { FC } from 'react';
 import Image from 'next/image';
-import { Container, VStack, Button, Text, Grid, GridItem, Flex, Icon } from '@chakra-ui/react';
+import { Container, VStack, Button, Text, Grid, GridItem, Flex, Box } from '@chakra-ui/react';
 import { AiOutlineDownload } from 'react-icons/ai';
 // @ts-ignore
 import Layout from '../components/Layout.tsx';
@@ -57,29 +57,26 @@ const Productions: FC<ProductionsProps> = () => (
         <Text fontSize="2xl" color="blue.500" fontWeight="bold">
           Active Productions
         </Text>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
-            <Flex alignItems="center">
-              <Icon as={AiOutlineDownload} w={6} h={6} />
-              <Text fontSize="md">Production 1</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection A</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -102,32 +99,28 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Icon as={AiOutlineDownload} w={6} h={6} />
-              <Text fontSize="md">Production 2</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection B</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -150,32 +143,29 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Icon as={AiOutlineDownload} w={6} h={6} />
-              <Text fontSize="md">Production 3</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection C</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -198,7 +188,52 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
+              </Text>
+            </Flex>
+          </GridItem>
+          <GridItem>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection D</Text>
+            </Flex>
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
+            <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
+              <GridItem>
+                <Image
+                  height={195}
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+            </Grid>
+            <Flex justifyContent="flex-end">
+              <Text fontSize="xs" mt={1} color="blue.500">
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
@@ -207,28 +242,26 @@ const Productions: FC<ProductionsProps> = () => (
         <Text fontSize="2xl" color="blue.500" fontWeight="bold">
           Draft Productions
         </Text>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production 4</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection A</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right" textTransform="uppercase">
-                Draft
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -251,31 +284,28 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production 5</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection B</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right" textTransform="uppercase">
-                Draft
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -298,31 +328,29 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production 6</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection C</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right" textTransform="uppercase">
-                Draft
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -345,7 +373,52 @@ const Productions: FC<ProductionsProps> = () => (
             </Grid>
             <Flex justifyContent="flex-end">
               <Text fontSize="xs" mt={1} color="blue.500">
-                View/Edit
+                Make a Copy
+              </Text>
+            </Flex>
+          </GridItem>
+          <GridItem>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection D</Text>
+            </Flex>
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
+            <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
+              <GridItem>
+                <Image
+                  height={195}
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+            </Grid>
+            <Flex justifyContent="flex-end">
+              <Text fontSize="xs" mt={1} color="blue.500">
+                Make a Copy
               </Text>
             </Flex>
           </GridItem>
@@ -354,28 +427,26 @@ const Productions: FC<ProductionsProps> = () => (
         <Text fontSize="2xl" color="blue.500" fontWeight="bold">
           Expired Productions
         </Text>
-        <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={6}>
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(4, 1fr)' }} gap={6}>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production A</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection A</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -403,26 +474,23 @@ const Productions: FC<ProductionsProps> = () => (
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production B</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection B</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -450,26 +518,69 @@ const Productions: FC<ProductionsProps> = () => (
             </Flex>
           </GridItem>
           <GridItem>
-            <Flex alignItems="center">
-              <Text fontSize="md">Production C</Text>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection C</Text>
             </Flex>
-            <Flex justifyContent="flex-end" mt={2}>
-              <Text fontSize="xs" as="i" textAlign="right">
-                Expires 12/31/2021
-              </Text>
-            </Flex>
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+              <GridItem>
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
+                />
+              </GridItem>
+            </Grid>
+            <Flex justifyContent="flex-end">
+              <Text fontSize="xs" mt={1} color="blue.500">
+                Make a Copy
+              </Text>
+            </Flex>
+          </GridItem>
+          <GridItem>
+            <Flex alignItems="center" mb={2}>
+              <Text fontSize="md">Collection D</Text>
+            </Flex>
+
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
+            <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
+              <GridItem>
+                <Image
+                  height={195}
+                  width={325}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>

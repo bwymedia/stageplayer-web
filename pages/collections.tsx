@@ -54,19 +54,20 @@ const Collections: FC<CollectionsProps> = () => (
               <Icon as={AiOutlineStar} w={6} h={6} />
               <Text fontSize="md">Starred</Text>
             </Flex>
-
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -97,19 +98,20 @@ const Collections: FC<CollectionsProps> = () => (
             <Flex alignItems="center" mb={2}>
               <Text fontSize="md">Collection 1</Text>
             </Flex>
-
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -141,18 +143,20 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection 2</Text>
             </Flex>
 
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={350}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -183,19 +187,20 @@ const Collections: FC<CollectionsProps> = () => (
             <Flex alignItems="center" mb={2}>
               <Text fontSize="md">Collection 3</Text>
             </Flex>
-
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={325}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -249,18 +254,20 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection A</Text>
             </Flex>
 
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={325}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -291,19 +298,20 @@ const Collections: FC<CollectionsProps> = () => (
             <Flex alignItems="center" mb={2}>
               <Text fontSize="md">Collection B</Text>
             </Flex>
-
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={325}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -335,18 +343,20 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection C</Text>
             </Flex>
 
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
                 <Image
                   height={195}
                   width={325}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
@@ -378,22 +388,24 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection D</Text>
             </Flex>
 
-            <Image
-              height={195}
-              width={350}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
-              alt="50s Diner"
-            />
+            <Box height="195px" maxWidth="350px" position="relative">
+              <Image
+                layout="fill"
+                src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                alt="50s Diner"
+                objectFit="cover"
+              />
+            </Box>
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
-              <GridItem width={{ base: '100%' }}>
+              <GridItem>
                 <Image
                   height={195}
                   width={325}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcURaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c1ef9392a4c97a2e8b497040b471e19496cdee7f/341A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
-              <GridItem width={{ base: '100%' }}>
+              <GridItem>
                 <Image
                   height={65}
                   width={115}
@@ -401,7 +413,7 @@ const Collections: FC<CollectionsProps> = () => (
                   alt="50s Diner"
                 />
               </GridItem>
-              <GridItem width={{ base: '100%' }}>
+              <GridItem>
                 <Image
                   height={65}
                   width={115}
