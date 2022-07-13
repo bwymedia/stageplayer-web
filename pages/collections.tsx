@@ -194,7 +194,7 @@ const Collections: FC<CollectionsProps> = () => (
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
+                  width={325}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -259,7 +259,7 @@ const Collections: FC<CollectionsProps> = () => (
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
+                  width={325}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -302,7 +302,7 @@ const Collections: FC<CollectionsProps> = () => (
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
+                  width={325}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -345,7 +345,7 @@ const Collections: FC<CollectionsProps> = () => (
               <GridItem>
                 <Image
                   height={195}
-                  width={350}
+                  width={325}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                   alt="50s Diner"
                 />
@@ -385,15 +385,15 @@ const Collections: FC<CollectionsProps> = () => (
               alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
-              <GridItem>
+              <GridItem width={{ base: '100%' }}>
                 <Image
                   height={195}
-                  width={350}
+                  width={325}
                   src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                   alt="50s Diner"
                 />
               </GridItem>
-              <GridItem>
+              <GridItem width={{ base: '100%' }}>
                 <Image
                   height={65}
                   width={115}
@@ -401,7 +401,7 @@ const Collections: FC<CollectionsProps> = () => (
                   alt="50s Diner"
                 />
               </GridItem>
-              <GridItem>
+              <GridItem width={{ base: '100%' }}>
                 <Image
                   height={65}
                   width={115}

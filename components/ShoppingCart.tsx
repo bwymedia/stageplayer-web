@@ -28,7 +28,7 @@ const ShoppingCart = () => {
       <Button variant="transparent" onClick={onOpen}>
         <Icon h={6} w={6} as={FiShoppingCart} />
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} isCentered>
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size={{ base: 'sm', md: 'lg' }}>
         <ModalOverlay />
         <ModalContent rounded="none">
           <ModalHeader mt={4}>My Cart</ModalHeader>
