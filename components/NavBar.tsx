@@ -95,11 +95,9 @@ const Navbar = ({ children }: Props): React.ReactNode => {
             </MenuList>
           </Menu>
           {!isLoggedIn && (
-            <Show breakpoint="(min-width: 768px)">
-              <NextLink href="/">
-                <Image src={StagePlayerLogo} height={40} width={75} alt="Broadway Media" />
-              </NextLink>
-            </Show>
+            <NextLink href="/">
+              <Image src={StagePlayerLogo} height={40} width={75} alt="Broadway Media" />
+            </NextLink>
           )}
         </Flex>
         {isLoggedIn ? (

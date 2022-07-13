@@ -94,8 +94,8 @@ const Login: FC<LoginProps> = () => {
               </NextLink>
               <Box display={{ base: 'none', md: 'block' }} />
               and our{' '}
-              <NextLink href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla" passHref>
-                <Link color="dark.500" href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla" target="_blank">
+              <NextLink href="https://www.broadwaymedia.com/resources/eucrla" passHref>
+                <Link color="dark.500" href="https://www.broadwaymedia.com/resources/eucrla" target="_blank">
                   <Text as="u"> End User License Agreement</Text>
                 </Link>
               </NextLink>

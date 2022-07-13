@@ -94,7 +94,7 @@ const Home: NextPage = () => (
           <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4} mt={2}>
             {dropData.map((drop) => (
               <GridItem key={drop.id}>
-                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} />
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} preload="none" />
               </GridItem>
             ))}
           </Grid>
@@ -104,7 +104,7 @@ const Home: NextPage = () => (
           <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4} mt={2}>
             {dropData.map((drop) => (
               <GridItem key={drop.id}>
-                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} />
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} preload="none" />
               </GridItem>
             ))}
           </Grid>
@@ -114,7 +114,7 @@ const Home: NextPage = () => (
           <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4} mt={2}>
             {dropData.map((drop) => (
               <GridItem key={drop.id}>
-                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} />
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} preload="none" />
               </GridItem>
             ))}
           </Grid>
@@ -124,7 +124,7 @@ const Home: NextPage = () => (
           <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4} mt={2}>
             {dropData.map((drop) => (
               <GridItem key={drop.id}>
-                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} />
+                <video style={{ width: '100%' }} src={drop.previewVideo} controls poster={drop.image} preload="none" />
               </GridItem>
             ))}
           </Grid>
