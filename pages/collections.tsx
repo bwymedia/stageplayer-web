@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import { FC } from 'react';
-
+import Image from 'next/image';
 import { Container, VStack, Box, Text, Grid, GridItem, Flex, Icon } from '@chakra-ui/react';
 import { AiOutlineStar, AiOutlinePlusCircle } from 'react-icons/ai';
 // @ts-ignore
@@ -55,31 +55,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Starred</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>
@@ -94,31 +98,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection 1</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>
@@ -133,31 +141,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection 2</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>
@@ -194,31 +206,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection A</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>
@@ -233,31 +249,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection B</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>
@@ -272,31 +292,35 @@ const Collections: FC<CollectionsProps> = () => (
               <Text fontSize="md">Collection C</Text>
             </Flex>
 
-            <video
-              style={{ width: '100%' }}
-              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1BZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bbde9323dec784fa70cea93b47760f9957f9400/278A-preview.webm"
-              controls
+            <Image
+              height={195}
+              width={350}
+              src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+              alt="50s Diner"
             />
             <Grid templateColumns="repeat(3, 1fr)" gap={2} mt={2}>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBai9ZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1f034bc975de651f552853a1ab8e1cc4fcd4bea0/400A-preview.webm"
-                  controls
+                <Image
+                  height={195}
+                  width={350}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--135e037ebeee45c66ccd61edff91ec50a7b3868f/061D-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBa0RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d60fa5d7e05f2761ce5948d43c3ab4511f2fd424/400A-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
               <GridItem>
-                <video
-                  style={{ width: '100%' }}
-                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDdaIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d354da37f2db5c7c3f6ab60c40ef67d994d2464b/341A-preview.webm"
-                  controls
+                <Image
+                  height={65}
+                  width={115}
+                  src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzdkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--349c0bc6a117a0834c15b9d89de018519857614e/061D-thumbnail.webp"
+                  alt="50s Diner"
                 />
               </GridItem>
             </Grid>

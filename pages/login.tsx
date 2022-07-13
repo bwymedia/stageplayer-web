@@ -1,5 +1,6 @@
 import React, { useState, FC } from 'react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 import {
   Flex,
   Input,
@@ -86,14 +87,18 @@ const Login: FC<LoginProps> = () => {
           <Center ml={{ md: 36 }} mr={{ lg: 36, xl: 16 }}>
             <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
               By signing in, you agree to our{' '}
-              <Link color="dark.900" href="/">
-                <Text as="u">Terms and Conditions</Text>
-              </Link>
+              <NextLink href="/https://www.broadwaymedia.com/about/terms" passHref>
+                <Link color="dark.900" href="/https://www.broadwaymedia.com/about/terms">
+                  <Text as="u">Terms and Conditions</Text>
+                </Link>
+              </NextLink>
               <Box display={{ base: 'none', md: 'block' }} />
               and our{' '}
-              <Link color="dark.500" href="/">
-                <Text as="u"> End User License Agreement</Text>
-              </Link>
+              <NextLink href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla" passHref>
+                <Link color="dark.500" href="https://www.broadwaymedia.com/products/digital-scenery/resources/eucrla">
+                  <Text as="u"> End User License Agreement</Text>
+                </Link>
+              </NextLink>
               .
             </Text>
           </Center>
