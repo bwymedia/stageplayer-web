@@ -52,8 +52,10 @@ const Navbar = ({ children }: Props): React.ReactNode => {
                   </NextLink>
                 </MenuItem>
                 <MenuItem>
-                  <NextLink href="/">
-                    <Text ml={4}>Contact Us</Text>
+                  <NextLink href="https://www.broadwaymedia.com/about/contact-us" passHref>
+                    <Link href="https://www.broadwaymedia.com/about/contact-us" target="_blank">
+                      <Text ml={4}>Contact Us</Text>
+                    </Link>
                   </NextLink>
                 </MenuItem>
               </MenuGroup>
@@ -90,7 +92,11 @@ const Navbar = ({ children }: Props): React.ReactNode => {
                 <NextLink href="/login">Login/Logout</NextLink>
               </MenuItem>
               <MenuItem>
-                <NextLink href="/">Help</NextLink>
+                <NextLink href="https://www.broadwaymedia.com/learn/help-center" passHref>
+                  <Link href="https://www.broadwaymedia.com/learn/help-center" target="_blank">
+                    Help
+                  </Link>
+                </NextLink>
               </MenuItem>
             </MenuList>
           </Menu>
@@ -135,7 +141,7 @@ const Navbar = ({ children }: Props): React.ReactNode => {
                 <br />
                 Check out{' '}
                 <NextLink href="https://catalog.broadwaymedia.com/shows" passHref>
-                  <Link color="blue.500" href="/https://catalog.broadwaymedia.com/shows" target="_blank">
+                  <Link color="blue.500" href="https://catalog.broadwaymedia.com/shows" target="_blank">
                     Scenic Projections
                   </Link>
                 </NextLink>
