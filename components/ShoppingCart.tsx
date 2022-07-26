@@ -43,7 +43,7 @@ const ShoppingCart = () => {
               <GridItem colSpan={5}>
                 <Text fontSize="sm" fontWeight="semibold" mb={0}>
                   Subscription Tier: Basic <br />
-                  <Link fontSize="sm" href="/" color="blue.500" ml={2} mt={0}>
+                  <Link fontSize="sm" href="/subscriptions" color="blue.500" ml={2} mt={0}>
                     Change
                   </Link>
                 </Text>
@@ -69,18 +69,16 @@ const ShoppingCart = () => {
               <GridItem colSpan={5}>
                 <Text fontSize="sm" fontWeight="semibold" mb={0}>
                   Show 1
-                  <Text color="gray.400" ml={2} fontSize="xs">
+                  <span>
                     Suggested: Scenic Projects&nbsp;
                     <Icon as={InfoOutlineIcon} />
-                  </Text>
+                  </span>
                 </Text>
               </GridItem>
               <GridItem colSpan={3}>
                 <Text fontSize="sm" fontWeight="semibold" textAlign="right">
                   $700.00
-                  <Text color="gray.400" ml={2}>
-                    $300.00
-                  </Text>
+                  <span>$300.00</span>
                 </Text>
               </GridItem>
               <GridItem colSpan={1}>
@@ -99,14 +97,14 @@ const ShoppingCart = () => {
               <GridItem colSpan={5}>
                 <Text fontSize="sm" fontWeight="semibold" mb={0}>
                   Show 2
-                  <Text color="gray.400" ml={2} mb={2} fontSize="xs">
+                  <span>
                     Suggested: Scenic Projects&nbsp;
                     <Icon as={InfoOutlineIcon} />
-                  </Text>
-                  <Text color="gray.400" ml={2} fontSize="xs">
+                  </span>
+                  <span>
                     Suggested: Scenic Projects&nbsp;
                     <Icon as={InfoOutlineIcon} />
-                  </Text>
+                  </span>
                 </Text>
               </GridItem>
               <GridItem colSpan={3}>

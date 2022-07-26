@@ -85,11 +85,13 @@ const Login: FC<LoginProps> = () => {
         </Grid>
         <Box mt={16}>
           <Center ml={{ md: 36 }} mr={{ lg: 36, xl: 16 }}>
-            <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
-              By signing in, you agree to our{' '}
+            <Box>
+              <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
+                By signing in, you agree to our
+              </Text>
               <NextLink href="https://www.broadwaymedia.com/about/terms" passHref>
                 <Link color="dark.900" href="/https://www.broadwaymedia.com/about/terms" target="_blank">
-                  <Text as="u">Terms and Conditions</Text>
+                  <span>Terms and Conditions</span>
                 </Link>
               </NextLink>
               <Box display={{ base: 'none', md: 'block' }} />
@@ -100,7 +102,7 @@ const Login: FC<LoginProps> = () => {
                 </Link>
               </NextLink>
               .
-            </Text>
+            </Box>
           </Center>
         </Box>
       </Container>

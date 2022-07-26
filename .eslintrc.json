@@ -1,6 +1,6 @@
 
 {
-  "extends": ["airbnb", "prettier", "plugin:node/recommended", "next/core-web-vitals"],
+  "extends": ["prettier", "plugin:node/recommended", "next/core-web-vitals"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",

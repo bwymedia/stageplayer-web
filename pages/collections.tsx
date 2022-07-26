@@ -81,6 +81,7 @@ const Collections: FC<CollectionsProps> = () => (
                 src="https://accounts.broadwaymedia.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1RZIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1d3e9bb8d6f4134f057158bf5a898c6b1e1fba77/278A-thumbnail.webp"
                 alt="50s Diner"
                 objectFit="cover"
+                priority="true"
               />
             </Box>
             <CollectionGrid />

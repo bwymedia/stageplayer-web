@@ -47,63 +47,49 @@ const Navbar = ({ children }: Props): React.ReactNode => {
             <MenuList py={0} zIndex={3} onMouseEnter={onOpen} onMouseLeave={onClose}>
               <MenuGroup title="StagePlayer Web">
                 <MenuItem>
-                  <NextLink href="/">
-                    <Text ml={4}>About SP Web</Text>
-                  </NextLink>
+                  <Link href="https://www.broadwaymedia.com/about/broadway-media" target="blank">
+                    About SP Web
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <NextLink href="https://www.broadwaymedia.com/about/contact-us" passHref>
-                    <Link href="https://www.broadwaymedia.com/about/contact-us" target="_blank">
-                      <Text ml={4}>Contact Us</Text>
-                    </Link>
-                  </NextLink>
+                  <Link href="https://www.broadwaymedia.com/about/contact-us" target="_blank">
+                    Contact Us
+                  </Link>
                 </MenuItem>
               </MenuGroup>
               <MenuGroup title="My Collections">
                 <MenuItem>
-                  <NextLink href="/collections">
-                    <Text ml={4}>New Collections</Text>
-                  </NextLink>
+                  <Link href="/collections">New Collections</Link>
                 </MenuItem>
                 <MenuItem>
-                  <NextLink href="/editor">
-                    <Text ml={4}>View/Edit</Text>
-                  </NextLink>
+                  <Link href="/editor">View/Edit</Link>
                 </MenuItem>
               </MenuGroup>
               <MenuGroup title="My Productions">
                 <MenuItem>
-                  <NextLink href="/productions">
-                    <Text ml={4}>New Production</Text>
-                  </NextLink>
+                  <Link href="/productions">New Production</Link>
                 </MenuItem>
                 <MenuItem>
-                  <NextLink href="/productions">
-                    <Text ml={4}>Active Productions</Text>
-                  </NextLink>
+                  <Link href="/productions">Active Productions</Link>
                 </MenuItem>
                 <MenuItem>
-                  <NextLink href="/productions">
-                    <Text ml={4}>Retired Productions</Text>
-                  </NextLink>
+                  <Link href="/productions">Retired Productions</Link>
                 </MenuItem>
               </MenuGroup>
               <MenuItem>
-                <NextLink href="/login">Login/Logout</NextLink>
+                <Link href="/login">Login/Logout</Link>
               </MenuItem>
               <MenuItem>
-                <NextLink href="https://www.broadwaymedia.com/learn/help-center" passHref>
-                  <Link href="https://www.broadwaymedia.com/learn/help-center" target="_blank">
-                    Help
-                  </Link>
-                </NextLink>
+                <Link href="https://www.broadwaymedia.com/learn/help-center" target="_blank">
+                  Help
+                </Link>
               </MenuItem>
             </MenuList>
           </Menu>
           {!isLoggedIn && (
-            <NextLink href="/">
+            <Link href="/">
               <Image src={StagePlayerLogo} height={40} width={75} alt="Broadway Media" />
-            </NextLink>
+            </Link>
           )}
         </Flex>
         {isLoggedIn ? (
@@ -123,11 +109,11 @@ const Navbar = ({ children }: Props): React.ReactNode => {
                   </HStack>
                 </Show>
               </InputGroup>
-              <NextLink href="/profile">
+              <Link href="/profile">
                 <Button variant="transparent" size="sm" alignSelf="center">
                   <Icon as={RiAccountCircleLine} h={8} w={8} />
                 </Button>
-              </NextLink>
+              </Link>
             </>
           </ButtonGroup>
         ) : (
@@ -140,11 +126,9 @@ const Navbar = ({ children }: Props): React.ReactNode => {
                 Looking for script-accurate show content?
                 <br />
                 Check out{' '}
-                <NextLink href="https://catalog.broadwaymedia.com/shows" passHref>
-                  <Link color="blue.500" href="https://catalog.broadwaymedia.com/shows" target="_blank">
-                    Scenic Projections
-                  </Link>
-                </NextLink>
+                <Link color="blue.500" href="https://catalog.broadwaymedia.com/shows" target="_blank">
+                  Scenic Projections
+                </Link>
               </Text>
             </Show>
           )}

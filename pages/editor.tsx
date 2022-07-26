@@ -201,8 +201,8 @@ const Editor = () => (
               <AccordionPanel pb={1} border="1px" borderColor="gray.200">
                 <Grid templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(5, 1fr)' }} gap={{ base: 1 }} alignItems="center">
                   {starredCollections.map((collection) => (
-                    <>
-                      <GridItem key={collection.name} colSpan={{ base: 2 }}>
+                    <div key={collection.name}>
+                      <GridItem colSpan={{ base: 2 }}>
                         <Image height={40} width={80} src={collection.image} alt="278A" />
                       </GridItem>
                       <GridItem colSpan={{ base: 1, md: 3 }}>
@@ -210,7 +210,7 @@ const Editor = () => (
                           {collection.name}
                         </Text>
                       </GridItem>
-                    </>
+                    </div>
                   ))}
                 </Grid>
               </AccordionPanel>
@@ -256,9 +256,7 @@ const Editor = () => (
           <Flex justifyContent="space-between" alignItems="center" mt={4}>
             <Text fontWeight="bold" mt={2}>
               Cue 1.1-C
-              <Text fontSize="xs" fontWeight="normal" fontStyle="italic">
-                Ballroom Lights Up
-              </Text>
+              <span>Ballroom Lights Up</span>
             </Text>
             <ButtonGroup spacing={2}>
               <Button variant="outline" colorScheme="blue" size={{ base: 'sm', md: 'md' }}>
@@ -271,14 +269,12 @@ const Editor = () => (
           </Flex>
           <Text fontStyle="italic" fontSize="sm" mt={4} textAlign="right">
             Next cue (p.6):
-            <Text fontStyle="normal" fontWeight="bold">
-              Lets go home
-            </Text>
+            <span>Lets go home</span>
           </Text>
         </GridItem>
       </Grid>
       <Text fontWeight="bold" mt={4} display="flex">
-        Production 2 <Text fontWeight="normal">&nbsp;- Cues</Text>
+        Production 2 <span>&nbsp;- Cues</span>
       </Text>
       <Grid templateColumns={{ base: 'repeat(9, 1fr)' }} mt={0} bg="gray.200">
         <GridItem
