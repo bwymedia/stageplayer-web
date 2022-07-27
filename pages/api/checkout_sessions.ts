@@ -4,6 +4,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY_TEST_USD);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   // Create Checkout Sessions from body params.
+  const { name } = req.body;
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
@@ -16,5 +17,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     success_url: `${req.headers.origin}/?success=true`,
     cancel_url: `${req.headers.origin}/?canceled=true`,
   });
-  res.status(200).json({ session });
+  res.status(200).json({ sessionId: session.id });
 }

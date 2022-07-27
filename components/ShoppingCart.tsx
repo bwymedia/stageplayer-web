@@ -21,13 +21,31 @@ import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { CloseIcon, InfoOutlineIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import { useRouter } from 'next/router';
 
-// const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY_TEST_USD);
+const stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY_TEST_USD}`);
 
 const ShoppingCart = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter();
+
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    const { sessionId } = await fetch('./api/checkout_sessions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: 'base subscription',
+      }),
+    }).then((res) => res.json());
+    const stripe: any = await stripePromise;
+    const { error } = await stripe.redirectToCheckout({
+      sessionId,
+    });
+    if (error) {
+      console.error(error);
+    }
+  };
 
   // React.useEffect(() => {
   //   // Check to see if this is a redirect back from Checkout
@@ -56,7 +74,7 @@ const ShoppingCart = () => {
           </Box>
 
           <ModalBody>
-            <form action="/api/checkout_sessions" method="POST">
+            <form method="POST" onSubmit={onSubmit}>
               <Grid templateColumns="repeat(9, 1fr)">
                 <GridItem colSpan={5}>
                   <Text fontSize="sm" fontWeight="semibold" mb={0}>
