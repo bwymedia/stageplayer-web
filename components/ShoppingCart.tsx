@@ -19,10 +19,27 @@ import {
 import { FiShoppingCart } from 'react-icons/fi';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { CloseIcon, InfoOutlineIcon } from '@chakra-ui/icons';
+import React from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+import { useRouter } from 'next/router';
+
+// const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY_TEST_USD);
 
 const ShoppingCart = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter();
 
+  // React.useEffect(() => {
+  //   // Check to see if this is a redirect back from Checkout
+  //   const query = new URLSearchParams(window.location.search);
+  //   if (query.get('success')) {
+  //     console.log('Order placed! You will receive an email confirmation.');
+  //   }
+
+  //   if (query.get('canceled')) {
+  //     console.log('Order canceled -- continue to shop around and checkout when you’re ready.');
+  //   }
+  // }, []);
   return (
     <>
       <Button variant="transparent" onClick={onOpen}>
@@ -39,106 +56,105 @@ const ShoppingCart = () => {
           </Box>
 
           <ModalBody>
-            <Grid templateColumns="repeat(9, 1fr)">
-              <GridItem colSpan={5}>
-                <Text fontSize="sm" fontWeight="semibold" mb={0}>
-                  Subscription Tier: Basic <br />
-                  <Link fontSize="sm" href="/subscriptions" color="blue.500" ml={2} mt={0}>
-                    Change
-                  </Link>
-                </Text>
-              </GridItem>
-              <GridItem colSpan={3}>
-                <Text fontSize="sm" fontWeight="semibold" textAlign="right">
-                  $50.00/mo
-                </Text>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Text mb={5} />
-                <Flex justifyContent="center" alignItems="center">
-                  <Button variant="ghost" size="xs" color="gray.500">
-                    <Icon as={AiOutlinePlusCircle} />
-                  </Button>
-                  <Button variant="ghost" size="xs" color="gray.500">
-                    <Icon as={CloseIcon} w={2} h={2} />
-                  </Button>
-                </Flex>
-              </GridItem>
-            </Grid>
-            <Grid templateColumns="repeat(9, 1fr)" mt={4}>
-              <GridItem colSpan={5}>
-                <Text fontSize="sm" fontWeight="semibold" mb={0}>
-                  Show 1
-                  <span>
-                    Suggested: Scenic Projects&nbsp;
-                    <Icon as={InfoOutlineIcon} />
-                  </span>
-                </Text>
-              </GridItem>
-              <GridItem colSpan={3}>
-                <Text fontSize="sm" fontWeight="semibold" textAlign="right">
-                  $700.00
-                  <span>$300.00</span>
-                </Text>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Text mb={5} />
-                <Flex justifyContent="center" alignItems="center">
-                  <Button variant="ghost" size="xs" color="gray.500">
-                    <Icon as={AiOutlinePlusCircle} />
-                  </Button>
-                  <Button variant="ghost" size="xs" color="gray.500">
-                    <Icon as={CloseIcon} w={2} h={2} />
-                  </Button>
-                </Flex>
-              </GridItem>
-            </Grid>
-            <Grid templateColumns="repeat(9, 1fr)" mt={4}>
-              <GridItem colSpan={5}>
-                <Text fontSize="sm" fontWeight="semibold" mb={0}>
-                  Show 2
-                  <span>
-                    Suggested: Scenic Projects&nbsp;
-                    <Icon as={InfoOutlineIcon} />
-                  </span>
-                  <span>
-                    Suggested: Scenic Projects&nbsp;
-                    <Icon as={InfoOutlineIcon} />
-                  </span>
-                </Text>
-              </GridItem>
-              <GridItem colSpan={3}>
-                <Text fontSize="sm" fontWeight="semibold" textAlign="right">
-                  $700.00
-                </Text>
-              </GridItem>
-              <GridItem colSpan={1}>
-                <Text mb={5} />
-                <Flex justifyContent="center" alignItems="center">
-                  <Button variant="ghost" size="xs" color="gray.500" fontSize="xs">
-                    <Icon as={AiOutlinePlusCircle} />
-                  </Button>
-                  <Button variant="ghost" size="xs" color="gray.500">
-                    <Icon as={CloseIcon} w={2} h={2} />
-                  </Button>
-                </Flex>
-                <Flex justifyContent="center" alignItems="center">
-                  <Button variant="ghost" color="gray.500" size="xs">
-                    <Icon as={AiOutlinePlusCircle} />
-                  </Button>
-                  <Button variant="ghost" color="gray.500" size="xs">
-                    <Icon as={CloseIcon} w={2} h={2} />
-                  </Button>
-                </Flex>
-              </GridItem>
-            </Grid>
+            <form action="/api/checkout_sessions" method="POST">
+              <Grid templateColumns="repeat(9, 1fr)">
+                <GridItem colSpan={5}>
+                  <Text fontSize="sm" fontWeight="semibold" mb={0}>
+                    Subscription Tier: Basic <br />
+                    <Link fontSize="sm" href="/subscriptions" color="blue.500" ml={2} mt={0}>
+                      Change
+                    </Link>
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={3}>
+                  <Text fontSize="sm" fontWeight="semibold" textAlign="right">
+                    $50.00/mo
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={1}>
+                  <Text mb={5} />
+                  <Flex justifyContent="center" alignItems="center">
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={AiOutlinePlusCircle} />
+                    </Button>
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={CloseIcon} w={2} h={2} />
+                    </Button>
+                  </Flex>
+                </GridItem>
+              </Grid>
+              <Grid templateColumns="repeat(9, 1fr)" mt={4}>
+                <GridItem colSpan={5}>
+                  <Text fontSize="sm" fontWeight="semibold" mb={0}>
+                    Show 1
+                    <span>
+                      Suggested: Scenic Projects&nbsp;
+                      <Icon as={InfoOutlineIcon} />
+                    </span>
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={3}>
+                  <Text fontSize="sm" fontWeight="semibold" textAlign="right">
+                    $700.00
+                    <span>$300.00</span>
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={1}>
+                  <Text mb={5} />
+                  <Flex justifyContent="center" alignItems="center">
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={AiOutlinePlusCircle} />
+                    </Button>
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={CloseIcon} w={2} h={2} />
+                    </Button>
+                  </Flex>
+                </GridItem>
+              </Grid>
+              <Grid templateColumns="repeat(9, 1fr)" mt={4}>
+                <GridItem colSpan={5}>
+                  <Text fontSize="sm" fontWeight="semibold" mb={0}>
+                    Show 2
+                    <span>
+                      Suggested: Scenic Projects&nbsp;
+                      <Icon as={InfoOutlineIcon} />
+                    </span>
+                    <span>
+                      Suggested: Scenic Projects&nbsp;
+                      <Icon as={InfoOutlineIcon} />
+                    </span>
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={3}>
+                  <Text fontSize="sm" fontWeight="semibold" textAlign="right">
+                    $700.00
+                  </Text>
+                </GridItem>
+                <GridItem colSpan={1}>
+                  <Text mb={5} />
+                  <Flex justifyContent="center" alignItems="center">
+                    <Button variant="ghost" size="xs" color="gray.500" fontSize="xs">
+                      <Icon as={AiOutlinePlusCircle} />
+                    </Button>
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={CloseIcon} w={2} h={2} />
+                    </Button>
+                  </Flex>
+                  <Flex justifyContent="center" alignItems="center">
+                    <Button variant="ghost" color="gray.500" size="xs">
+                      <Icon as={AiOutlinePlusCircle} />
+                    </Button>
+                    <Button variant="ghost" color="gray.500" size="xs">
+                      <Icon as={CloseIcon} w={2} h={2} />
+                    </Button>
+                  </Flex>
+                </GridItem>
+              </Grid>
+              <Button colorScheme="blue" mr={-3} mb={-1} type="submit">
+                Checkout
+              </Button>
+            </form>
           </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={-3} mb={-1} onClick={onClose}>
-              Checkout
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>
