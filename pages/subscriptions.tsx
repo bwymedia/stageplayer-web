@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Text, Radio, Grid, GridItem, VStack, Flex, RadioGroup, Button } from '@chakra-ui/react';
+import { Container, Text, Radio, Grid, GridItem, VStack, Flex, RadioGroup, Button, Box } from '@chakra-ui/react';
 // @ts-ignore
 import Layout from '../components/Layout.tsx';
 
@@ -72,6 +72,7 @@ const Subscriptions = () => {
                       borderBottom="1px"
                       width="100%"
                       py={2}
+                      fontSize="xl"
                       display="flex"
                       justifyContent="center"
                       flexDirection="column"
@@ -80,15 +81,24 @@ const Subscriptions = () => {
                     >
                       {item.price}
                       {item.pricePerDuration && <>/{item.pricePerDuration}</>}
-                      <span>{item.paymentCycle && <>billed {item.paymentCycle}</>}</span>
-                      <span>{item.priceComparison && <>(${item.priceComparison} month-to-month)</>}</span>
+                      <Box fontWeight="normal" fontSize={{ base: 'xs', md: 'sm' }} mt={-1}>
+                        {item.paymentCycle && <>billed {item.paymentCycle}</>}
+                      </Box>
+                      <Box fontWeight="normal" fontSize={{ base: 'xs', md: 'sm' }} mt={-1}>
+                        {item.priceComparison && <>(${item.priceComparison} month-to-month)</>}
+                      </Box>
                     </Text>
                     <Text fontSize="2xl" fontWeight="semibold" borderBottom="1px" width="100%" py={2} style={{ marginTop: 0 }}>
-                      {item.activeShowAmount}
-                      <span>active show{item.activeShowAmount > 1 ? 's' : ''}</span>
+                      {item.activeShowAmount}&nbsp;
+                      <Box fontSize={{ base: 'md', md: 'lg' }} mt={-3}>
+                        active show{item.activeShowAmount > 1 ? 's' : ''}
+                      </Box>
                     </Text>
-                    <Text fontSize="xl" fontWeight="semibold" borderBottom="1px" width="100%" py={3} style={{ marginTop: 0 }}>
-                      {item.userStorage} GB<span>storage for user content</span>
+                    <Text fontSize="2xl" fontWeight="bold" borderBottom="1px" width="100%" py={3} style={{ marginTop: 0 }}>
+                      {item.userStorage} GB
+                      <Box fontSize={{ base: 'md', md: 'lg' }} mt={-3}>
+                        storage for user content
+                      </Box>
                     </Text>
                     <Text
                       fontSize="xs"

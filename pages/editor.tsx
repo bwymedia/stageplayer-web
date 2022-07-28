@@ -256,7 +256,9 @@ const Editor = () => (
           <Flex justifyContent="space-between" alignItems="center" mt={4}>
             <Text fontWeight="bold" mt={2}>
               Cue 1.1-C
-              <span>Ballroom Lights Up</span>
+              <Box display="block" fontWeight="light" fontStyle="italic">
+                Ballroom Lights Up
+              </Box>
             </Text>
             <ButtonGroup spacing={2}>
               <Button variant="outline" colorScheme="blue" size={{ base: 'sm', md: 'md' }}>
@@ -269,12 +271,14 @@ const Editor = () => (
           </Flex>
           <Text fontStyle="italic" fontSize="sm" mt={4} textAlign="right">
             Next cue (p.6):
-            <span>Lets go home</span>
+            <Box display="block" fontStyle="normal" fontWeight="bold" mt={-1}>
+              &quot;Lets go home&quot;
+            </Box>
           </Text>
         </GridItem>
       </Grid>
       <Text fontWeight="bold" mt={4} display="flex">
-        Production 2 <span>&nbsp;- Cues</span>
+        Production 2 <Box fontWeight="normal">&nbsp;- Cues</Box>
       </Text>
       <Grid templateColumns={{ base: 'repeat(9, 1fr)' }} mt={0} bg="gray.200">
         <GridItem

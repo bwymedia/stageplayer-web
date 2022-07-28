@@ -10,7 +10,6 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Grid,
@@ -18,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { FiShoppingCart } from 'react-icons/fi';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
-import { CloseIcon, InfoOutlineIcon } from '@chakra-ui/icons';
+import { CloseIcon, InfoOutlineIcon, DeleteIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 
@@ -61,12 +60,19 @@ const ShoppingCart = () => {
   return (
     <>
       <Button variant="transparent" onClick={onOpen}>
-        <Icon h={6} w={6} as={FiShoppingCart} />
+        <Text display="flex" alignItems="end">
+          <Icon h={6} w={6} as={FiShoppingCart} />
+          <Box fontSize="sm" fontWeight="light">
+            (2)
+          </Box>
+        </Text>
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} isCentered size={{ base: 'md', md: 'lg' }}>
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size={{ base: 'lg' }}>
         <ModalOverlay />
-        <ModalContent rounded="none">
-          <ModalHeader mt={4}>My Cart</ModalHeader>
+        <ModalContent rounded="none" px={6} pb={6}>
+          <ModalHeader mt={4} color="blue.500" fontWeight="bold" fontSize="3xl">
+            My Cart
+          </ModalHeader>
           <Box position="absolute" right={0}>
             <Flex justifyContent="flex-end" alignItems="center" position="relative">
               <ModalCloseButton />
@@ -76,15 +82,15 @@ const ShoppingCart = () => {
           <ModalBody>
             <form method="POST" onSubmit={onSubmit}>
               <Grid templateColumns="repeat(9, 1fr)">
-                <GridItem colSpan={5}>
+                <GridItem colSpan={6}>
                   <Text fontSize="sm" fontWeight="semibold" mb={0}>
                     Subscription Tier: Basic <br />
                     <Link fontSize="sm" href="/subscriptions" color="blue.500" ml={2} mt={0}>
-                      Change
+                      Manage Subscription
                     </Link>
                   </Text>
                 </GridItem>
-                <GridItem colSpan={3}>
+                <GridItem colSpan={2}>
                   <Text fontSize="sm" fontWeight="semibold" textAlign="right">
                     $50.00/mo
                   </Text>
@@ -93,84 +99,96 @@ const ShoppingCart = () => {
                   <Text mb={5} />
                   <Flex justifyContent="center" alignItems="center">
                     <Button variant="ghost" size="xs" color="gray.500">
-                      <Icon as={AiOutlinePlusCircle} />
+                      <Icon as={AiOutlinePlusCircle} w={4} h={4} />
                     </Button>
                     <Button variant="ghost" size="xs" color="gray.500">
-                      <Icon as={CloseIcon} w={2} h={2} />
+                      <Icon as={CloseIcon} w={2.5} h={2.5} />
                     </Button>
                   </Flex>
                 </GridItem>
               </Grid>
               <Grid templateColumns="repeat(9, 1fr)" mt={4}>
-                <GridItem colSpan={5}>
+                <GridItem colSpan={6}>
                   <Text fontSize="sm" fontWeight="semibold" mb={0}>
-                    Show 1
-                    <span>
+                    <Box alignItems="center" display="flex">
+                      Show 1 <Icon as={DeleteIcon} h={3} w={3} ml={2} color="gray.500" />
+                    </Box>
+                    <Box alignItems="center" display="flex" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
                       Suggested: Scenic Projects&nbsp;
                       <Icon as={InfoOutlineIcon} />
-                    </span>
+                    </Box>
                   </Text>
                 </GridItem>
-                <GridItem colSpan={3}>
+                <GridItem colSpan={2}>
                   <Text fontSize="sm" fontWeight="semibold" textAlign="right">
                     $700.00
-                    <span>$300.00</span>
+                    <Box display="block" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
+                      $300.00
+                    </Box>
                   </Text>
                 </GridItem>
                 <GridItem colSpan={1}>
                   <Text mb={5} />
                   <Flex justifyContent="center" alignItems="center">
                     <Button variant="ghost" size="xs" color="gray.500">
-                      <Icon as={AiOutlinePlusCircle} />
+                      <Icon as={AiOutlinePlusCircle} w={4} h={4} />
                     </Button>
                     <Button variant="ghost" size="xs" color="gray.500">
-                      <Icon as={CloseIcon} w={2} h={2} />
+                      <Icon as={CloseIcon} w={2.5} h={2.5} />
                     </Button>
                   </Flex>
                 </GridItem>
               </Grid>
               <Grid templateColumns="repeat(9, 1fr)" mt={4}>
-                <GridItem colSpan={5}>
+                <GridItem colSpan={6}>
                   <Text fontSize="sm" fontWeight="semibold" mb={0}>
-                    Show 2
-                    <span>
-                      Suggested: Scenic Projects&nbsp;
+                    Show 2 <Icon as={DeleteIcon} h={3} w={3} ml={2} color="gray.500" />
+                    <Box alignItems="center" display="flex" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
+                      Suggested: Choreography Guides&nbsp;
                       <Icon as={InfoOutlineIcon} />
-                    </span>
-                    <span>
-                      Suggested: Scenic Projects&nbsp;
+                    </Box>
+                    <Box alignItems="center" display="flex" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
+                      Suggested: Accompaniment&nbsp;
                       <Icon as={InfoOutlineIcon} />
-                    </span>
+                    </Box>
                   </Text>
                 </GridItem>
-                <GridItem colSpan={3}>
+                <GridItem colSpan={2}>
                   <Text fontSize="sm" fontWeight="semibold" textAlign="right">
                     $700.00
+                    <Box display="block" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
+                      $300.00
+                    </Box>
+                    <Box display="block" color="gray.500" fontWeight="normal" ml={4} fontStyle="italic">
+                      $300.00
+                    </Box>
                   </Text>
                 </GridItem>
                 <GridItem colSpan={1}>
                   <Text mb={5} />
                   <Flex justifyContent="center" alignItems="center">
-                    <Button variant="ghost" size="xs" color="gray.500" fontSize="xs">
-                      <Icon as={AiOutlinePlusCircle} />
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={AiOutlinePlusCircle} w={4} h={4} />
                     </Button>
                     <Button variant="ghost" size="xs" color="gray.500">
-                      <Icon as={CloseIcon} w={2} h={2} />
+                      <Icon as={CloseIcon} w={2.5} h={2.5} />
                     </Button>
                   </Flex>
                   <Flex justifyContent="center" alignItems="center">
-                    <Button variant="ghost" color="gray.500" size="xs">
-                      <Icon as={AiOutlinePlusCircle} />
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={AiOutlinePlusCircle} w={4} h={4} />
                     </Button>
-                    <Button variant="ghost" color="gray.500" size="xs">
-                      <Icon as={CloseIcon} w={2} h={2} />
+                    <Button variant="ghost" size="xs" color="gray.500">
+                      <Icon as={CloseIcon} w={2.5} h={2.5} />
                     </Button>
                   </Flex>
                 </GridItem>
               </Grid>
-              <Button colorScheme="blue" mr={-3} mb={-1} type="submit">
-                Checkout
-              </Button>
+              <Flex justifyContent="end" alignItems="center" mt={4}>
+                <Button colorScheme="blue" fontSize="sm" px={8} borderRadius="none" mr={-4} mb={-1} type="submit">
+                  Checkout
+                </Button>
+              </Flex>
             </form>
           </ModalBody>
         </ModalContent>

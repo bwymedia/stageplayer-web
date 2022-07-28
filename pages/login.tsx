@@ -40,14 +40,12 @@ const Login: FC<LoginProps> = () => {
     <Flex height="100vh" direction="column" alignItems="center" justifyContent="center" width="100vw">
       <Container maxW="6xl" my={4}>
         <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)', lg: 'repeat(5, 1fr)' }} justifyContent={{ base: 'center' }}>
-          <GridItem display={{ base: 'none', md: 'block' }} colSpan={{ md: 1 }} />
-
-          <GridItem>
+          <GridItem colSpan={{ base: 1, lg: 2 }}>
             <Center>
               <Image src={StagePlayerLogo} alt="Broadway Media" />
             </Center>
           </GridItem>
-          <GridItem colSpan={{ base: 1, md: 2, lg: 2 }}>
+          <GridItem colSpan={{ base: 1, md: 2 }}>
             <Box>
               <form>
                 <Stack spacing={4} p="1rem" backgroundColor="whiteAlpha.900">
@@ -66,9 +64,11 @@ const Login: FC<LoginProps> = () => {
                       </InputRightElement>
                     </InputGroup>
                     <FormHelperText textAlign="left">
-                      {/* <Link color="dark.500" href="/"> */}
-                      <Text as="u">Forgot password?</Text>
-                      {/* </Link> */}
+                      <Text as="u">
+                        <Link color="dark.500" href="/">
+                          Forgot password?
+                        </Link>
+                      </Text>
                     </FormHelperText>
                   </FormControl>
                 </Stack>
@@ -87,21 +87,23 @@ const Login: FC<LoginProps> = () => {
           <Center ml={{ md: 36 }} mr={{ lg: 36, xl: 16 }}>
             <Box>
               <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
-                By signing in, you agree to our
+                By signing in, you agree to our&nbsp;
+                <Link color="dark.900" href="https://www.broadwaymedia.com/about/terms" target="_blank">
+                  <Box display="inline" style={{ textDecoration: 'underline', fontWeight: '600' }}>
+                    Terms and Conditions
+                  </Box>
+                </Link>
               </Text>
-              <NextLink href="https://www.broadwaymedia.com/about/terms" passHref>
-                <Link color="dark.900" href="/https://www.broadwaymedia.com/about/terms" target="_blank">
-                  <span>Terms and Conditions</span>
-                </Link>
-              </NextLink>
               <Box display={{ base: 'none', md: 'block' }} />
-              and our{' '}
-              <NextLink href="https://www.broadwaymedia.com/resources/eucrla" passHref>
+              <Text textAlign="right" fontSize={{ base: '85%', md: '100%' }}>
+                and our{' '}
                 <Link color="dark.500" href="https://www.broadwaymedia.com/resources/eucrla" target="_blank">
-                  <Text as="u"> End User License Agreement</Text>
+                  <Box display="inline" style={{ textDecoration: 'underline', fontWeight: '600' }}>
+                    End User License Agreement
+                  </Box>
+                  .
                 </Link>
-              </NextLink>
-              .
+              </Text>{' '}
             </Box>
           </Center>
         </Box>
